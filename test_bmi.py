@@ -1,4 +1,4 @@
-import Lab2 as bmi
+from Lab2 import bmi 
 
 print("Test_bmi.py")
 
@@ -10,10 +10,10 @@ def test_bmi_normal_weight():
 
 def test_bmi_over_weight():
     expected_result = 1
-    test_result = bmi.calculate_bmi(1.72,55)
+    test_result = bmi.calculate_bmi(1.72,100)
     assert(expected_result == test_result)
 
 def test_bmi_under_weight():
     expected_result = -1
-    test_result = bmi.calculate_bmi(1.72,55)
+    test_result = bmi.calculate_bmi(1.72,40)
     assert(expected_result == test_result)
